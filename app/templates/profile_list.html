@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Adrene! </title>
+        <style>
+            .body{color:green;}
+        </style>
+    </head>
+    <body class="body">
+        <div class= "container">
+        <ul>
+            {% for profile in profiles %}
+            <li><a href="/profile/{{profile.id}">{{profile.id}} {{profile.first_name}}{{profile.last_name}}</a> </li>
+            {% endfor %} 
+        </ul>
+        </div>
+    </body>
+    
+    
+</html>

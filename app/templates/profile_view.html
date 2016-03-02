@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Adrene! </title>
+        <style>
+            .body{color:green;}
+        </style>
+    </head>
+    <body class="body">
+        
+        <form action="{{url_for('profile_add')}}" method="post">
+            
+            first name: <br>
+            {{form.first_name}}
+            <br><br>
+            last_name: <br>
+            {{form.last_name}}
+            <br><br>
+            <input type= "submit" value= "Submit">
+            
+        </form>
+        
+    </body>
+    
+    
+</html>
